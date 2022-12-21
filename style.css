@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Chivo Mono', monospace;
+}
+
+header {
+    height: 60px;
+    background-color: #faf0e6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left, .header-right {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 0 250px 0 250px;
+}
+
+p {
+    margin: 16px;
+    color: #C85050;
+
+}
+
+button {
+    background-color: black;
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 14px;
+}
