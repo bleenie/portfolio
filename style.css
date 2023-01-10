@@ -4,28 +4,42 @@
 }
 
 body, html {
-    height: 100%;
+
     font-family: 'Chivo Mono', monospace;
+    color: white;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, .header-bottom {
+    display: flex;
 }
 
 header {
-    height: 60px;
-    background-color: #faf0e6;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 100px;
+    flex-direction: column;
 }
 
-.header-left, .header-right {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    padding: 0 250px 0 250px;
+section {
+    margin: 20px;
+    height: 700px;
+    width: 80%;
+    background-color: white;
+}
+
+h1 { 
+    font-size: 48px;
 }
 
 p {
-    margin: 16px;
-    color: #C85050;
-
+    padding: 16px 28px;
+    font-size: 18px;
 }
 
 button {
