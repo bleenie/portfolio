@@ -4,50 +4,112 @@
 }
 
 body, html {
-
-    font-family: 'Chivo Mono', monospace;
+    font-family: 'Inter', sans-serif;
     color: white;
 }
 
 body {
     background-image: url('images/bg.jpg');
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-attachment: fixed;
 }
 
-header, .header-bottom {
-    display: flex;
-}
 
 header {
-    margin-top: 100px;
-    flex-direction: column;
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(31, 13, 67, 0.63);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.header-left, .header-right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.header-right {
+    right: 150px;
+}
+
+.header-left {
+    left: 150px;
+}
+
+#fullscreen-section {
+    height: 100vh;
+    width: 100vw;
 }
 
 section {
-    margin: 20px;
-    height: 700px;
-    width: 80%;
+    left: 10vw;
+    position: relative;
+    height: 85vh;
+    width: 80vw;
     background-color: white;
+    margin-bottom: 100px;
 }
 
-h1 { 
-    font-size: 48px;
+#fullscreen-section h1 { 
+    text-align:center;
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-p {
+#about {
+    display: grid;
+    grid-template-areas:
+    'title img'
+    'text img';
+}
+
+h2 { 
+    font-size: 40px;
+    color: purple;
+    grid-area: title;
+}
+
+section p { 
+    color: purple;
+    grid-area: text;
+}
+
+.placeholder-img {
+    background-color: purple;
+    height: 200px;
+    width: 100px;
+    grid-area: img;
+}
+
+.header-left p {
     padding: 16px 28px;
     font-size: 18px;
 }
 
 button {
-    background-color: black;
+    background-color: white;
     border-radius: 25px;
+    border-style: none;
     width: 120px;
     height: 40px;
-    color: white;
-    font-family: 'Chivo Mono', monospace;
-    font-size: 14px;
+    color: #8A53CF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(31, 13, 67, 0.63);
+    width: 100vw;
+    height: 200px;
 }
