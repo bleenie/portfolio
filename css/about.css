@@ -1,0 +1,38 @@
+/* about section */
+#about {
+    display: flex;
+}
+
+.about-left,
+.about-right {
+    width: 50%;
+}
+
+.about-left {
+    text-align: center;
+    margin: 50px;
+    position: relative;
+    top: 30vh;
+}
+
+.about-left p {
+    color: black;
+}
+
+/* avatar image */
+img {
+    border-radius: 50%;
+    position: relative;
+    top: 30vh;
+    left: 50px;
+}
+
+/* about titel aan rechterkant van section */
+.about-title {
+    position: absolute;
+    transform: rotate(270deg);
+    font-weight: bold;
+    font-size: 200px;
+    right: -250px;
+    color: #E2CAF5;
+}

@@ -1,38 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id = "fullscreen-section">
+    <!-- landing page -->
+    <div id="fullscreen-section">
         <h1>BO LEENDERS, <br>
-        SOFTWARE DEVELOPER</h1>
+            SOFTWARE DEVELOPER</h1>
     </div>
+    <!-- header met navigatie en CV download -->
     <header>
         <div class="header-left">
-            <p>About</p>
-            <p>My Work</p>
-            <p>Contact</p>
+            <a href="#about">About</a>
+            <a href="#work">My Work</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class = "header-right">
-            <button>GET CV</button>
+        <div class="header-right">
+            <button class="cv-button">GET CV</button>
         </div>
     </header>
-    <section id = "about">
-        <h2>About me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eos vel facilis tempora ratione, in adipisci velit molestiae. Autem similique ad quis, possimus cupiditate temporibus accusantium iste necessitatibus eius?</p>
-        <div class = "placeholder-img"></div>
-    </section>
-    <section id = "work"></section>
-    <section id = "contact"></section>
-    <footer></footer>
+    <!-- about page met stuk tekst over mezelf en avatar -->
+    <main>
+        <section id="about">
+            <div class="about-left">
+                <h2>Hi there! I'm Bo.</h2>
+                <p>I'm a 21 software developer-in-training based in the Netherlands.<br>
+                    Currently, I'm studying at ROC Nijmegen to hone my skills and become<br>
+                    a professional dev. It would be a pleasure to work with you!
+                </p>
+            </div>
+            <div class="about-right">
+                <img src="../images/avatar.png" alt="Avatar">
+                <div class="about-title">
+                    <p>ABOUT</p>
+                </div>
+            </div>
+        </section>
+        <!-- work page -->
+        <section id="work">
+            <div class="work-flexbox">
+                <div class="work-left">
+                    <p class="head-text">HTML &amp; CSS</p>
+                    <p class="sub-text">Component Library</p>
+                    <a href="https://github.com/bleenie/component-library" target="about:blank">GITHUB</a>
+                </div>
+                <div class="work-right">
+                    <p class="head-text">JAVA</p>
+                    <p class="sub-text">Mastermind Application</p>
+                    <a href="https://github.com/bleenie/mastermind" target="about:blank">GITHUB</a>
+                </div>
+            </div>
+            <div class="work-title">
+                <p>SKILLS &amp; WORK</p>
+            </div>
+        </section>
+        <!-- contact page -->
+        <section id="contact">
+            <div class="contact-left">
+                <div class="container">
+                    <h2>Get in touch with me!</h2>
+                    <!-- contactformulier -->
+                    <form action="action_page.php">
+                        <input class="input-box" type="text" id="name" name="name" placeholder="Your name..">
+                        <input class="input-box" type="text" id="mail" name="mail" placeholder="Your e-mail...">
+                        <textarea id="subject" name="subject" placeholder="Leave me a message here!"></textarea>
+                        <input class="submit-button" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+            <div class="contact-right">
+                <p class="contact-title">CONTACT</p>
+            </div>
+        </section>
+    </main>
+    <!-- blanke footer maar wel een footer :) -->
+    <footer>
+    </footer>
 </body>
+
 </html>

@@ -3,13 +3,15 @@
     padding: 0;
 }
 
-body, html {
+body,
+html {
     font-family: 'Inter', sans-serif;
     color: white;
 }
 
+/* background image */
 body {
-    background-image: url('images/bg.jpg');
+    background-image: url('../images/bg.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -17,7 +19,7 @@ body {
     background-attachment: fixed;
 }
 
-
+/* basis van header */
 header {
     height: 80px;
     width: 100vw;
@@ -27,15 +29,16 @@ header {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
 }
 
-.header-left, .header-right {
+.header-left,
+.header-right {
     display: flex;
     text-align: center;
     align-items: center;
     position: relative;
 }
+
 .header-right {
     right: 150px;
 }
@@ -44,59 +47,8 @@ header {
     left: 150px;
 }
 
-#fullscreen-section {
-    height: 100vh;
-    width: 100vw;
-}
-
-section {
-    left: 10vw;
-    position: relative;
-    height: 85vh;
-    width: 80vw;
-    background-color: white;
-    margin-bottom: 100px;
-}
-
-#fullscreen-section h1 { 
-    text-align:center;
-    font-size: 60px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#about {
-    display: grid;
-    grid-template-areas:
-    'title img'
-    'text img';
-}
-
-h2 { 
-    font-size: 40px;
-    color: purple;
-    grid-area: title;
-}
-
-section p { 
-    color: purple;
-    grid-area: text;
-}
-
-.placeholder-img {
-    background-color: purple;
-    height: 200px;
-    width: 100px;
-    grid-area: img;
-}
-
-.header-left p {
-    padding: 16px 28px;
-    font-size: 18px;
-}
-
-button {
+/* CV download button styling */
+.cv-button {
     background-color: white;
     border-radius: 25px;
     border-style: none;
@@ -108,8 +60,50 @@ button {
     font-weight: bold;
 }
 
+/* header navigatie links */
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 16px;
+}
+
+/* landing page sizing*/
+#fullscreen-section {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* landing page titel */
+#fullscreen-section h1 {
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* basis style voor sections */
+section {
+    left: 10vw;
+    position: relative;
+    height: 85vh;
+    width: 80vw;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+/* heading voor sections */
+h2 {
+    font-size: 60px;
+    color: #9F4FDE;
+    margin-bottom: 10px;
+}
+
+/* basis van footer */
 footer {
     background-color: rgba(31, 13, 67, 0.63);
     width: 100vw;
-    height: 200px;
+    height: 80px;
 }
